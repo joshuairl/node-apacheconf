@@ -135,7 +135,7 @@ Parser.prototype.write = function(line) {
   default:
     var name = line.split(' ', 1)[0]
       , value = line.slice(name.length + 1).trim()
-
+    console.log(name);
     switch(name) {
     case 'Include':
       var self = this
